@@ -1,0 +1,44 @@
+{
+  "name": "react-porfolio",
+  "version": "1.0.0",
+  "description": "Updated Portfolio, March 2021",
+  "author": "Addison Moore",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "clear": "rm -rf .cache/ dist/ .parcel-cache/ ./build",
+    "format": "prettier \"src/**/*.{js, html}\" --write",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "start": "nodemon index.js",
+    "build": "parcel build --no-cache src/index.html --dist-dir ./build/",
+    "sass": "sass --watch sass:src/styles"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.1.5",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-react-jsx": "^7.12.17",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@emotion/babel-preset-css-prop": "^11.2.0",
+    "@emotion/eslint-plugin": "^11.2.0",
+    "@parcel/transformer-image": "^2.0.0-beta.2",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "parcel": "^2.0.0-beta.1",
+    "prettier": "^1.18.2"
+  }
+}
